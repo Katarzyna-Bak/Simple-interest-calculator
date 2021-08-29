@@ -5,7 +5,7 @@ function compute() {
     //block the value from going below 0, display error if it does and highlight the box
     if(principal == "" || principal <= 0)
     {
-        alert("Please enter a positive number");
+        alert("Enter a positive number");
         document.getElementById("principal").focus();
         return;
     }
