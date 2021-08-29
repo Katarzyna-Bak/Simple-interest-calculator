@@ -3,7 +3,7 @@ function compute() {
     var principal = parseFloat(document.getElementById("principal").value);
     
     //block the value from going below 0, display error if it does and highlight the box
-    if(principal == "" || principal <= 0 || principal == null) {
+    if(principal == "" || principal <= 0 || principal == NaN) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         return;
